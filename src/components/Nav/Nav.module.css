@@ -1,0 +1,27 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px #4b0e09;
+    background-color: #ff6052;
+    height: fit-content;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 2rem;
+
+}
+
+.Title{
+    height: 100%;
+    width: 15rem;
+    margin-left: 1rem;
+}
+
+.Title img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.Extra{
+
+    margin-right:16rem;
+}

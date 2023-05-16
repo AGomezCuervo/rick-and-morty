@@ -1,0 +1,93 @@
+.container{
+
+    display: flex;
+    width: 75%;
+    height: 75%;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    background-color: #d66c66;
+    box-shadow: 3px 3px 10px #4b0e09 ;
+    border-radius: 0 .5rem .5rem 0;
+    padding-right: 1rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: 3px 3px 100px #4b0e09 ;
+}
+
+.buttonContainer{
+    margin: auto 0;
+    height: 100%;
+}
+
+.button{
+    height: 100%;
+    width: 2rem;
+    background-color: #69ead2;
+    border: none;
+    border-radius: .5rem 0 0 .5rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px #4b0e09 ;
+    text-align: center;
+    font-size: 1.7rem;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.button:hover{
+
+    background-color: #f7f77b;
+    width: 4rem;
+    text-align: center;
+}
+
+
+
+.id{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 1rem ;
+    background-color:#debab1;
+    border: .3rem solid #d75d5f;
+    border-radius: 100%;
+    box-shadow: 0px 1px 1px 1px #410b08 inset;
+    height: 2rem;
+    width: 2rem;
+    padding: .3rem;
+    font-weight: bold;
+    color: #410b08;
+
+}
+
+.image{
+    margin: 1rem;
+    box-shadow: 1rem 1rem 20rem 2px crimson  ;
+    padding: .5rem;
+    border-radius: 100%;
+}
+
+.atributes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #410b08;
+}
+
+.atributes h2{
+    box-shadow: 1rem 1rem 100px 2px #c69457;
+    padding: 1rem;
+    background-color: #debab1;
+    border-radius: 3rem;
+    font-size: 1rem;
+
+
+
+
+}

@@ -1,0 +1,38 @@
+.container{
+    height: 3rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container input{
+    border-radius: 2rem;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+}
+
+.container button{
+    position: absolute;
+    height: calc(100% - .3rem);
+    width: fit-content;
+    top: 6%;
+    left: 99%;
+    color: #410b08;
+    transform: translateX(-103%);
+    border-radius: 0 2rem 2rem 0;
+    border: none;
+    background-color: #d66c66;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 10px;
+    text-align: right;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.container button:hover{
+    background-color: #69ead2;
+    box-shadow: 3px 3px 100px #4b0e09;
+}
