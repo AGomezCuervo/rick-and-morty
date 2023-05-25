@@ -1,10 +1,12 @@
 
 :root{
-    min-height: 100vw;
+    padding-bottom: 2vh;
+    height: fit-content;
     background-image: url("https://i.pinimg.com/originals/a4/f6/18/a4f6184c65b8cb0005ba489967cac45b.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    overflow-y: scroll;
 }
 
 

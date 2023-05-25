@@ -3,7 +3,7 @@ header{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 10px #4b0e09;
-    background-color: #ff6052;
+    background-color: #d66c66;
     height: fit-content;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -21,7 +21,15 @@ header{
     max-width: 100%;
     max-height: 100%;
 }
-.Extra{
-
-    margin-right:16rem;
+.ButtonsContainer{
+    width: 18rem;
 }
+
+.Button{
+    height: 3rem;
+    border: 0;
+    width: 8rem;
+    margin-right: 5%;
+    cursor: pointer;
+}
+

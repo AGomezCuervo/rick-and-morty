@@ -1,0 +1,87 @@
+.BGContainer{
+    padding-top: 12rem;
+}
+
+.Container{
+    background-color: white;
+    border: solid .1rem #b8b8b8 ;
+    width: 18%;
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 3%;
+    text-align: center;
+    min-height: 20rem;
+}
+
+.Container h1{
+    font-size: 1.4rem;
+    color: #202124;
+    font-weight: 400;
+}
+.InputContainer{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.ForgotPassword{
+    margin: 0 auto;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #69ead2;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+
+.Description{
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    color: #202124;
+    font-weight: 550;
+}
+
+.Container input{
+    display: block;
+    border: 0.01rem #b8b8b8 solid;
+    border-radius: .4rem;
+    width: 15rem;
+    height: 2rem;
+}
+
+.Input1{
+    margin-bottom: 1rem;
+}
+.ButtonLogIn{
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: .3rem;
+    border: 0;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: white;
+    background-color: #69ead2;
+    width: 8rem;
+    margin-bottom: 1rem;
+}
+
+.ButtonCreate{
+    display: block;
+    color: #69ead2;
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 0;
+    padding-top: .3rem;
+    border: 0;
+    cursor: pointer;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+.ButtonLogIn:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+
+
