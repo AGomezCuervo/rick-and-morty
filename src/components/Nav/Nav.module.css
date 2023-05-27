@@ -14,7 +14,8 @@ header{
 .Title{
     height: 100%;
     width: 15rem;
-    margin-left: 1rem;
+    margin-left: 1%;
+    margin-right: 10%;
 }
 
 .Title img{
@@ -22,14 +23,32 @@ header{
     max-height: 100%;
 }
 .ButtonsContainer{
-    width: 18rem;
+    width: 28.5rem;
 }
 
 .Button{
+    color: #410b08;
+    border-radius: 7%;
     height: 3rem;
     border: 0;
     width: 8rem;
     margin-right: 5%;
     cursor: pointer;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.Button:hover{
+    background-color: #69ead2;
+    box-shadow: 3px 3px 200px #4b0e09;
+}
+
+.Button:active{
+    background-color: white;
+}
+
+.Active{
+    background-color: #69ead2;
+    box-shadow: 3px 3px 200px #4b0e09;
 }
 

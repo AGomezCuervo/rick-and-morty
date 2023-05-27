@@ -7,3 +7,9 @@
 
 
 }
+
+@media screen and (max-width: 1366px ) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

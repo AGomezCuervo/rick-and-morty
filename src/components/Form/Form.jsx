@@ -29,8 +29,6 @@ function Form (props){
 
     const handleOnSubmit = (event) => {
         event.preventDefault();
-        console.log("handleOnSubmit");
-        console.log(props.access);
         props.login(input);
     }
 
