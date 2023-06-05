@@ -24,7 +24,7 @@ export const mapFav = (value) => {
 export const getCharacter = (input) => {
     return async function(dispatch){
         try {
-            const response = await fetch(`http://localhost:3001/onsearch/${input}`);
+            const response = await fetch(`http://localhost:3001/rickandmorty/character/${input}`);
             const data = await response.json()
             return dispatch({type: GET_CHARACTER , payLoad: data})
             
