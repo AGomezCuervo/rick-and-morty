@@ -9,7 +9,7 @@ function Detail(){
     const { id, name, species, gender, image, status} = character
 
     useEffect(() =>{
-        fetch(`https://rickandmortyapi.com/api/character/${idParam}`)
+        fetch(`http://localhost:3001/detail/${idParam}`)
         .then((response) => response.json())
         .then((data) =>{
             console.log(data)
