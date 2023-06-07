@@ -3,12 +3,14 @@
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     row-gap: 2rem;
+    overflow-x: hidden;
+    
 
 
 
 }
 
-@media screen and (max-width: 1366px ) {
+@media screen and (max-width: 1800px ) {
     .container{
         grid-template-columns: 1fr 1fr;
     }
