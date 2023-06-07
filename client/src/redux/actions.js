@@ -6,7 +6,10 @@ export const addFav = (character) => {
         try {
             const response = await fetch(endPoint,{
                 method: 'POST',
-                body:JSON.stringify(character),
+                headers: {
+                    'Content-Type': 'application/json'
+                 },
+                body: JSON.stringify(character),
                 
             });
             const data = await response.json()
@@ -21,7 +24,7 @@ export const addFav = (character) => {
 }
 
 export const removeFav = (id) => {
-    const endpoint = `http://localhost:3001/rickandmorty/fav/${id}`;
+    const endpoint = `http://localhost:3001/rickandmorty/fav/${String(id)}`;
     return async function (dispatch) {
         try {
         const response = await fetch(endpoint, {
@@ -32,7 +35,7 @@ export const removeFav = (id) => {
 
          dispatch({
             type: REMOVE_FAV,
-            payload: data
+            payLoad: data
          });
         } catch (error) {
             console.log("no existe este personaje")

@@ -12,7 +12,7 @@ function getCharById(request, response){
                 name,
                 gender,
                 species,
-                origin: origin.name,
+                origin,
                 image,
                 status
             }
