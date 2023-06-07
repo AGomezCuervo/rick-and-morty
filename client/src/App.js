@@ -15,20 +15,26 @@ function App() {
   const dispatch = useDispatch()
   const navigate = useNavigate();
   const [access, setAccess] = useState(false);
-  const EMAIL = 'ejemplo@gmail.com';
-  const PASSWORD = 'unaPassword';
+  const EMAIL = 'prueba@prueba.com';
+  const PASSWORD = 'password';
   
 
   const onSearch = (input) => {
     dispatch(getCharacter(input))
   };
 
-  const login = (userData) => {
-    if (userData.password === PASSWORD && userData.email === EMAIL) {
-       setAccess(true);
-       navigate('/home');
-    }
- }
+  function login(userData) {
+    const { email, password } = userData;
+    const URL = 'http://localhost:3001/rickandmorty/login/';
+
+    fetch(URL + `?email=${email}&password=${password}`)
+    .then(response => response.json())
+    .then(({ data }) => {
+       const { access } = data;
+       setAccess(access);
+       access && navigate('/home');
+    });
+  }
 
   useEffect( () => {
     !access && navigate('/');

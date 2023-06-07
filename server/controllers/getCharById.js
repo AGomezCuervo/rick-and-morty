@@ -1,26 +1,30 @@
-function getCharById(res, id){
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
-    .then(response => response.json())
+const URL = "https://rickandmortyapi.com/api/character/"
+
+function getCharById(request, response){
+    const {id} = request.params
+    fetch(URL + id)
+    .then(res => res.json())
     .then(data => {
         const {id, name, gender, species, origin, image, status} = data;
-
-        const character = {
-            id,
-            name,
-            gender,
-            species,
-            origin: origin.name,
-            image,
-            status
+        if(name){
+            const character = {
+                id,
+                name,
+                gender,
+                species,
+                origin: origin.name,
+                image,
+                status
+            }
+            return response.status(200).json(character)
         }
+        
+        return response.status(404).send("Not Found")
 
-        return res.writeHead(200, {"Content-type": "application/json"})
-            .end(JSON.stringify(character))
+
     })
     .catch(error => {
-        return res.writeHead(500, {"Content-type": "text/plain"})
-        .end(error.message)
-        }
+        return response.status(500).send(error.message)}
     )
 }
 

@@ -24,14 +24,13 @@ const reducer = (state = initialState, action ) => {
         case ADD_FAV:
             return {
                 ...state,
-                myFavorites:[action.payLoad, ...state.myFavorites]
+                myFavorites: action.payLoad
             };
 
         case REMOVE_FAV:
             return {
                 ...state,
-                myFavorites: state.myFavorites.filter(character => character.id !== Number(action.payLoad))
-
+                myFavorites: action.payLoad
             }
         
         case MAP_FAV:
